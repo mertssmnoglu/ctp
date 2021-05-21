@@ -1,4 +1,4 @@
-# Compy
+# Ctp
 Ctp makes easy to copy files into path.
 ## Download
 
