@@ -5,7 +5,6 @@ if [ $1 ]; then
     newfile="ctp_$argument"
 
     if [ -f $argument ]; then
-        echo "a"
         sudo cp $argument $newfile
         sudo mv $newfile /usr/local/bin/$argument
     else
