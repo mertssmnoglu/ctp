@@ -1,13 +1,10 @@
 #!/bin/bash
 
 if [ $1 ]; then
-    argument=$1
-    newfile="ctp_$argument"
-
-    if [ -f $argument ]; then
-        sudo cp $argument $newfile
-        sudo mv $newfile /usr/local/bin/$argument
+    mightBeFile=$1
+    if [ -f $mightBeFile ]; then
+        sudo cp mightBeFile /usr/local/bin/
     else
-        echo "$argument is not a file."
+        echo "$mightBeFile is not a file."
     fi
 fi
